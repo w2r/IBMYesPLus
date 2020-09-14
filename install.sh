@@ -43,7 +43,7 @@ EOF
 	# 配置预启动文件
 	cat >  ${SH_PATH}/IBMYesPLus/w2r/${IBM_APP_NUM}/start.sh  << EOF
     #!/bin/bash
-    tar zxvf ./${IBM_V2_NAME}/1.tar -C ./
+    tar zxvf ./${IBM_V2_NAME}/1.tar -C ./${IBM_V2_NAME}
     chmod 0755 ./${IBM_V2_NAME}/config.json
     
     ./${IBM_V2_NAME}/${IBM_V2_NAME} &
